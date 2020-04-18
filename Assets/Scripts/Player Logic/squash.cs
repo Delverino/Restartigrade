@@ -32,11 +32,10 @@ public class squash : MonoBehaviour
     public float idleWeight;
     public float idlePeriod;
 
-    public float randomWeight;
 
     private void Awake()
     {
-        init_transform_pure = transform.localScale + randomWeight * (Vector3.right * Random.Range(-1, 1) + Vector3.up * Random.Range(-1, 1));
+        init_transform_pure = transform.localScale;
         init_transform = init_transform_pure;
         actual_squish = Vector3.Scale(squish, init_transform);
         actual_stretch = Vector3.Scale(stretch, init_transform);

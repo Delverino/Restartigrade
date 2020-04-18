@@ -7,13 +7,13 @@ public class squash : MonoBehaviour
     public Rigidbody2D body;
 
     Vector3 init_transform;
+    Vector3 init_transform_pure;
+
     public Vector3 squish;
     public Vector3 stretch;
 
     Vector3 actual_squish;
     Vector3 actual_stretch;
-
-
 
     float y_threshold = 1; 
     float change_threshold = 10;
@@ -29,9 +29,13 @@ public class squash : MonoBehaviour
 
     SpriteRenderer sprite;
 
+    public float idleWeight;
+    public float idlePeriod;
+
     private void Awake()
     {
-        init_transform = transform.localScale;
+        init_transform_pure = transform.localScale;
+        init_transform = init_transform_pure;
         actual_squish = Vector3.Scale(squish, init_transform);
         actual_stretch = Vector3.Scale(stretch, init_transform);
         sprite = GetComponent<SpriteRenderer>();
@@ -39,6 +43,8 @@ public class squash : MonoBehaviour
 
     private void FixedUpdate()
     {
+        init_transform = init_transform_pure + idleWeight * (Vector3.up * Mathf.Sin(Time.timeSinceLevelLoad * 2  * Mathf.PI / idlePeriod));
+
         curr_velocity = body.velocity.y;
         velocity_diff = curr_velocity - last_velocity;
         last_velocity = curr_velocity;

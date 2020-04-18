@@ -271,6 +271,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Playerbody
       objectReference: {fileID: 0}
+    - target: {fileID: 4540737328447848317, guid: 68d1d21cc1ff530439d1535679bfd41b,
+        type: 3}
+      propertyPath: idleWeight
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540737328447848317, guid: 68d1d21cc1ff530439d1535679bfd41b,
+        type: 3}
+      propertyPath: idlePeriod
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4540737328447848319, guid: 68d1d21cc1ff530439d1535679bfd41b,
         type: 3}
       propertyPath: m_Sprite

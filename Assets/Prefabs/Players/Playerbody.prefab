@@ -198,7 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dust: {fileID: 5915635467091229341, guid: 42195ae20d07e71448899b4acc61521a, type: 3}
   jumpOverride: 0
-  jump_impulse: 15
+  jump_impulse: 20
   speed: 8
   body: {fileID: 4540737328117837254}
   right_foot: {fileID: 4540737327123766619}
@@ -210,6 +210,7 @@ MonoBehaviour:
   jump_time: 0.3
   hang_time: 0.2
   jump_sound: {fileID: 4540737328117837250}
+  state: falling
 --- !u!82 &4540737328117837250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -406,6 +407,8 @@ MonoBehaviour:
   squish: {x: 1.4, y: 0.4, z: 1}
   stretch: {x: 0.9, y: 1.1, z: 1}
   elasticity: 0.2
+  idleWeight: 0
+  idlePeriod: 0
 --- !u!1001 &7117102898572197015
 PrefabInstance:
   m_ObjectHideFlags: 0

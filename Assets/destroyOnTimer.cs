@@ -8,9 +8,27 @@ public class destroyOnTimer : MonoBehaviour
 
     public float time;
 
+    float startTime;
+    Vector3 startSize;
+
     private void Awake()
     {
+        startTime = Time.timeSinceLevelLoad;
+        startSize = transform.localScale;
         StartCoroutine(timer());
+    }
+
+    public void Update()
+    {
+        if (on)
+        {
+            transform.localScale = Vector3.Lerp(startSize, Vector3.zero, smoothStart((Time.timeSinceLevelLoad - startTime) / time));
+        }
+    }
+
+    public float smoothStart(float t)
+    {
+        return t * t;
     }
 
     IEnumerator timer()

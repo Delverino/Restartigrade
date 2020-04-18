@@ -6,6 +6,7 @@ public class virus : MonoBehaviour
 {
     public static List<GameObject> viruses;
     static int maxVirus = 20;
+    static Vector3 startSize;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +14,20 @@ public class virus : MonoBehaviour
         if(viruses == null)
         {
             viruses = new List<GameObject>();
+            startSize = transform.localScale;
+        } else
+        {
+            transform.localScale = startSize;
         }
+    }
+
+    private void Awake()
+    {
+        if(startSize != Vector3.zero)
+        {
+            transform.localScale = startSize;
+        }
+
     }
 
     // Update is called once per frame

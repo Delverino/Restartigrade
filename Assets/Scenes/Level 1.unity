@@ -1189,6 +1189,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140540658 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2461747862929785853, guid: 684178d39b5c229428cea6f21934e817,
+    type: 3}
+  m_PrefabInstance: {fileID: 2461747862156548740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140540664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140540658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b42df3312fc3a4db15c11235fb904b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieParticles: {fileID: 3339140666593949107, guid: 503b4a666a6a33f4d8635cc70a8909ba,
+    type: 3}
 --- !u!1001 &535454477462837507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1268,12 +1288,12 @@ PrefabInstance:
     - target: {fileID: 2461747862929785848, guid: 684178d39b5c229428cea6f21934e817,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.98
+      value: -7.95
       objectReference: {fileID: 0}
     - target: {fileID: 2461747862929785848, guid: 684178d39b5c229428cea6f21934e817,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.1
+      value: -3.78
       objectReference: {fileID: 0}
     - target: {fileID: 2461747862929785848, guid: 684178d39b5c229428cea6f21934e817,
         type: 3}
@@ -1324,6 +1344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Virus
+      objectReference: {fileID: 0}
+    - target: {fileID: 6336471344277614620, guid: 684178d39b5c229428cea6f21934e817,
+        type: 3}
+      propertyPath: time
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 684178d39b5c229428cea6f21934e817, type: 3}

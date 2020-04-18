@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1983793118543852229}
   - component: {fileID: 1983793118543852232}
   - component: {fileID: 1983793118543852234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,6 @@ MonoBehaviour:
   elasticity: 0.2
   idleWeight: 0.05
   idlePeriod: 2
-  randomWeight: 0
 --- !u!1 &1983793118734393459
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,7 +119,7 @@ GameObject:
   - component: {fileID: 1891582217496961266}
   - component: {fileID: 1983793118734393467}
   - component: {fileID: 1983793118734393468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Playerbody
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -222,7 +221,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983793118734393459}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: b24b36268b81a944790f8684fa027464, type: 2}
   m_IsTrigger: 0
@@ -230,7 +229,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.5}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
 --- !u!114 &1983793118734393460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,7 +364,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983793118734393459}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -419,7 +418,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983793118980805157}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left Foot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -434,7 +433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983793118980805156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.462, y: 0.0002, z: 0}
+  m_LocalPosition: {x: -0.1413, y: 0.069, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983793118543852229}
@@ -449,7 +448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983793119896228076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right Foot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -464,7 +463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983793119896228079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.439, y: 0.00009, z: 0}
+  m_LocalPosition: {x: 0.1325, y: 0.082699835, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983793118543852229}
@@ -644,6 +643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Running_Particles
+      objectReference: {fileID: 0}
+    - target: {fileID: 2728020590324126458, guid: 5ba59da683302c64da4e48875bc33215,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ba59da683302c64da4e48875bc33215, type: 3}

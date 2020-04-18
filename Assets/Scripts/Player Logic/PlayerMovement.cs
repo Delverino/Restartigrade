@@ -51,7 +51,6 @@ public class PlayerMovement : MonoBehaviour
 
     public float randomSpeed;
 
-    public float randomSize;
 
     public float randomJumpHeight;
 
@@ -66,7 +65,6 @@ public class PlayerMovement : MonoBehaviour
     {
         base_gravity = body.gravityScale;
         speed = randomize(speed, randomSpeed);
-        transform.localScale += randomSize * (Vector3.right * Random.Range(-1, 1) + Vector3.up * Random.Range(-1, 1));
         jump_time = randomize(jump_time, randomJumpHeight);
         jump_impulse = randomize(jump_impulse, randomJumpSpeed);
     }
@@ -113,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case "jumping":  // going upward
-                body.velocity = new Vector2(body.velocity.x, jump_impulse);
+                body.velocity = new Vector2(body.velocity.x, Mathf.Max(jump_impulse, body.velocity.y));
                 if (jumpOverride)
                 {
                     jump();

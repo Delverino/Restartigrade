@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Win
+  - Hazard
   layers:
   - Default
   - TransparentFX

@@ -49,9 +49,12 @@ public class PlayerMovement : MonoBehaviour
     float jump_begin;
     public string state = "falling";
 
+    public float randomizerWeight;
+
     private void Awake()
     {
         base_gravity = body.gravityScale;
+        speed += randomizerWeight * Random.Range(-1f, 1f);
     }
     
     // Update is called once per frame

@@ -257,6 +257,7 @@ MonoBehaviour:
   hang_time: 0.2
   jump_sound: {fileID: 1983793118734393461}
   state: falling
+  randomizerWeight: 4
 --- !u!82 &1983793118734393461
 AudioSource:
   m_ObjectHideFlags: 0

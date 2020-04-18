@@ -51,10 +51,13 @@ public class PlayerMovement : MonoBehaviour
 
     public float randomizerWeight;
 
+    public float randomWeight;
+
     private void Awake()
     {
         base_gravity = body.gravityScale;
         speed += randomizerWeight * Random.Range(-1f, 1f);
+        transform.localScale += randomWeight * (Vector3.right * Random.Range(-1, 1) + Vector3.up * Random.Range(-1, 1));
     }
     
     // Update is called once per frame

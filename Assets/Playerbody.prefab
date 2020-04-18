@@ -102,6 +102,7 @@ MonoBehaviour:
   elasticity: 0.2
   idleWeight: 0.05
   idlePeriod: 2
+  randomWeight: 0
 --- !u!1 &1983793118734393459
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +259,7 @@ MonoBehaviour:
   jump_sound: {fileID: 1983793118734393461}
   state: falling
   randomizerWeight: 4
+  randomWeight: 0.3
 --- !u!82 &1983793118734393461
 AudioSource:
   m_ObjectHideFlags: 0

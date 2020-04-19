@@ -11,6 +11,8 @@ public class LevelManager : MonoBehaviour
 
     public List<GameObject> players;
 
+    bool spawning = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,14 +33,28 @@ public class LevelManager : MonoBehaviour
             }
         }
 
-        if (players.Count < maxPlayers)
+        if (!spawning)
         {
-            players.Add(Instantiate(player, transform.position, Quaternion.identity));
+            StartCoroutine(spawn());
         }
+
+
+
 /*
         if (Input.GetKeyDown(KeyCode.R))
         {
             Instantiate(player, transform.position, Quaternion.identity);
         }*/
+    }
+
+    IEnumerator spawn()
+    {
+        spawning = true;
+        if (players.Count < maxPlayers)
+        {
+            players.Add(Instantiate(player, transform.position, Quaternion.identity));
+            yield return new WaitForSeconds(0.2f);
+        }
+        spawning = false;
     }
 }

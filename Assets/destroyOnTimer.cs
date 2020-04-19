@@ -23,6 +23,10 @@ public class destroyOnTimer : MonoBehaviour
         if (on)
         {
             transform.localScale = Vector3.Lerp(startSize, Vector3.zero, smoothStart((Time.timeSinceLevelLoad - startTime) / time));
+            if(transform.localScale.sqrMagnitude < 0.1f)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

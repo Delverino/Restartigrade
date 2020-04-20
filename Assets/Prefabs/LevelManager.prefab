@@ -49,6 +49,16 @@ MonoBehaviour:
   player: {fileID: 1983793118734393459, guid: d22da316d6d34f5459b67111015481e7, type: 3}
   maxPlayers: 20
   players: []
+  sounds:
+  - {fileID: 8300000, guid: be3b90da4f799494bb5d043ed4d21c73, type: 3}
+  - {fileID: 8300000, guid: 16e578414047b834780b2bf05dae662c, type: 3}
+  - {fileID: 8300000, guid: 3a45a5f6235a09d4f8a425bdbd67215f, type: 3}
+  - {fileID: 8300000, guid: c4114540d52740e4aaf39ceb4da00cd5, type: 3}
+  - {fileID: 8300000, guid: 854e71e22651eaa489f6bf5f64620f42, type: 3}
+  - {fileID: 8300000, guid: 66021571e9e36bc4581f20aaae45131c, type: 3}
+  - {fileID: 8300000, guid: 22f2f12e1d2bb654d924c02d837c22a4, type: 3}
+  - {fileID: 8300000, guid: 0e0081afb6b1676499e949d2246ec58d, type: 3}
+  - {fileID: 8300000, guid: e34ef655506db5b42a06273f989f60e1, type: 3}
 --- !u!212 &4077946885218663484
 SpriteRenderer:
   m_ObjectHideFlags: 0

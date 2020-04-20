@@ -15,6 +15,8 @@ public class LevelManager : MonoBehaviour
 
     bool spawning = false;
 
+    public List<AudioClip> sounds;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,7 @@ public class LevelManager : MonoBehaviour
         if (players.Count < maxPlayers)
         {
             players.Add(Instantiate(player, transform.position, Quaternion.identity));
+            spawn_sound.clip = sounds[Random.Range(0, sounds.Count)];
             spawn_sound.Play();
             yield return new WaitForSeconds(0.2f);
         }

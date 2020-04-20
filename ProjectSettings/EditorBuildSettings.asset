@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: c66477278f8d3e049ab7e54d4c96c348
-  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: c3326bdca637971418033ae59104887b
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: c66477278f8d3e049ab7e54d4c96c348
   - enabled: 1
     path: Assets/Scenes/Intro.unity
     guid: 3e2b168859bfae541ae85fb1ff340047
@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outro.unity
     guid: 22da1400918afbe46a1308bc7c8f2a8d
+  - enabled: 1
+    path: Assets/Scenes/You Win!.unity
+    guid: cd0b6e07293706f4898f404a6fe94739
   m_configObjects: {}

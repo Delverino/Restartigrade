@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public AudioSource spawn_sound;
+
     public GameObject player;
 
     public int maxPlayers;
@@ -53,6 +55,7 @@ public class LevelManager : MonoBehaviour
         if (players.Count < maxPlayers)
         {
             players.Add(Instantiate(player, transform.position, Quaternion.identity));
+            spawn_sound.Play();
             yield return new WaitForSeconds(0.2f);
         }
         spawning = false;

@@ -21,6 +21,7 @@ public class destroyOnHazard : MonoBehaviour
         if (collision.gameObject.CompareTag("Hazard"))
         {
             Destroy(gameObject);
+            sound.Instance.play();
         }
     }
 }
